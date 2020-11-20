@@ -1,38 +1,52 @@
 body {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    font-size: 14pt;
     display: flex;
     justify-content: center;
-    align-items: center;;
-    background-color:blueviolet;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    color: rgb(72, 56, 73);
+    background-color: #3333;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
 .card {
     display: flex;
-    margin-top: 30px;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    width: 600px;
-    height: 400px;
+    background-color: #EEE2DF;
+    width: 60vh;
+    box-shadow: 1px 2px 5px 5px rosybrown;
     border-radius: 5%;
-    box-shadow: pink;
-    border: pink solid 5px;
-    box-shadow: 20px 10px 20px 10px rosybrown;
+    line-height: 8px;
 }
 
 .image {
-    border: pink solid 7px;
+    border: rosybrown solid 5px;
     height: 100px;
     width: 100px;
     border-radius: 100%;
     margin-top: 30px;
-    margin-left: 30px;
+}
+
+.titles {
+    text-align: center;
+    position: relative;
 }
 
 .content {
+    background-color: #dfcec9;
+    opacity: 0.9;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:500px; 
-    height: 300px;
+    justify-content: space-between;
+    padding: 15px;
+    width: 50vh;
+    margin: 30px;
+    line-height: 4px;
+}
+
+.estadistic {
+    text-align: center;
 }
