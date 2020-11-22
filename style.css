@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 	padding: 0;
@@ -19,8 +23,8 @@ body {
     background-color: #EEE2DF;
     width: 60vh;
     box-shadow: 1px 2px 5px 5px rosybrown;
-    border-radius: 5%;
-    line-height: 8px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .image {
@@ -28,12 +32,21 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    margin-top: 30px;
 }
 
 .titles {
     text-align: center;
     position: relative;
+}
+
+.titles .username, .titles .company {
+    margin: 0;
+    margin-top: 10px;
+    line-height: 1.6rem;
+}
+
+.titles .bio {
+    font-size: 1rem;
 }
 
 .content {
@@ -42,9 +55,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    width: 50vh;
-    margin: 30px;
+    width: 100%;
+    margin-top: 10px;
     line-height: 4px;
+    border-radius: 10px;
 }
 
 .estadistic {

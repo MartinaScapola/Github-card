@@ -1,13 +1,13 @@
-let image = document.getElementsByClassName("image") 
-let username = document.getElementsByClassName("username")
-let company = document.getElementsByClassName("company")
-let numberRepos = document.getElementsByClassName("numberRepos")
-let numberGists = document.getElementsByClassName("numberGists")
-let numberFollowers = document.getElementsByClassName("numberFollowers")
-
+const image = document.querySelector(".image"); 
+const username = document.querySelector(".username");
+const company = document.querySelector(".company");
+const numberRepos = document.querySelector(".numberRepos");
+const numberGists = document.querySelector(".numberGists");
+const numberFollowers = document.querySelector(".numberFollowers");
+const bio = document.querySelector(".bio")
 
 async function getGithubData() {
-    let data = await fetch("https://api.github.com/users/MartinaScapola")
+    const data = await fetch("https://api.github.com/users/MartinaScapola")
       .then((res) => res.json())
       .then((data) => (obj = data))
       .catch((error) => console.log(error));
@@ -17,7 +17,13 @@ async function getGithubData() {
   async function set(){
     const data = await getGithubData()
     console.log(data)
-    username.AppendChild(data.login)
+    image.src = data.avatar_url
+    username.innerText = data.login
+    company.innerText = data.company
+    numberRepos.innerText = data.public_repos
+    numberGists.innerText = data.public_gists
+    numberFollowers.innerText = data.followers
+    bio.innerText = data.bio
 }
 
 
