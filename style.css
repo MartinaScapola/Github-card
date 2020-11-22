@@ -8,6 +8,7 @@ body {
     border: 0;
     font-size: 14pt;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(72, 56, 73);
@@ -22,7 +23,7 @@ body {
     align-items: center;
     background-color: #EEE2DF;
     width: 60vh;
-    box-shadow: 1px 2px 5px 5px rosybrown;
+    box-shadow: 0px 10px 50px -15px rgb(72, 56, 73);
     border-radius: 20px;
     padding: 20px;
 }
@@ -63,4 +64,19 @@ body {
 
 .estadistic {
     text-align: center;
+}
+
+.social {
+    margin-top: 40px;
+    display:flex;
+    align-items: center;
+}
+
+.social .icon {
+    width: 40px;
+    margin-right: 30px;
+}
+
+.social-link:last-of-type .icon {
+    margin: 0;
 }
