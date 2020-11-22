@@ -20,7 +20,7 @@ async function getGithubData() {
     const data = await getGithubData()
 
     image.src = data.avatar_url
-    username.innerText = data.login
+    username.innerText = data.name
     company.innerText = data.company
     numberRepos.innerText = data.public_repos
     numberGists.innerText = data.public_gists
